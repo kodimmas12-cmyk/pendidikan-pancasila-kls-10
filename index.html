@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPKn Kelas 10 - SMA Taruna Nala</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    html, body { height: 100%; margin: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .heading-font { font-family: 'Playfair Display', serif; }
+    
+    .hero-gradient {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    }
+    
+    .card-gradient {
+      background: linear-gradient(180deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%);
+    }
+    
+    .gold-accent {
+      background: linear-gradient(135deg, #f4d03f 0%, #e6b91e 50%, #c9a227 100%);
+    }
+    
+    .red-accent {
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    }
+    
+    .material-card {
+      transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+    
+    .material-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    }
+    
+    .video-card {
+      transition: all 0.3s ease;
+    }
+    
+    .video-card:hover {
+      transform: scale(1.05);
+    }
+    
+    .animate-float {
+      animation: float 6s ease-in-out infinite;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    .animate-pulse-slow {
+      animation: pulse-slow 3s ease-in-out infinite;
+    }
+    
+    @keyframes pulse-slow {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+    
+    .garuda-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 5 L35 25 L55 30 L35 35 L30 55 L25 35 L5 30 L25 25 Z' fill='%23f4d03f' fill-opacity='0.05'/%3E%3C/svg%3E");
+    }
+    
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      transition: all 0.3s ease;
+    }
+    
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #c0392b 0%, #a93226 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(231, 76, 60, 0.3);
+    }
+    
+    .section-divider {
+      background: linear-gradient(90deg, transparent, #f4d03f, transparent);
+      height: 2px;
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full overflow-auto scroll-smooth hero-gradient garuda-pattern text-white"><!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-md border-b border-yellow-500/20">
+   <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+     <div class="w-12 h-12 gold-accent rounded-full flex items-center justify-center shadow-lg"><span class="text-2xl">🦅</span>
+     </div>
+     <div>
+      <h1 class="text-lg font-bold text-yellow-400" id="nav-title">PPKn Kelas 10</h1>
+      <p class="text-xs text-slate-400" id="nav-school">SMA Taruna Nala Jawa Timur</p>
+     </div>
+    </div>
+    <div class="hidden md:flex items-center gap-6"><a href="#materi" class="text-sm text-slate-300 hover:text-yellow-400 transition-colors">Materi</a> <a href="#video" class="text-sm text-slate-300 hover:text-yellow-400 transition-colors">Video</a> <a href="#kontak" class="text-sm text-slate-300 hover:text-yellow-400 transition-colors">Kontak</a>
+    </div>
+   </div>
+  </nav><!-- Hero Section -->
+  <section class="relative pt-24 pb-16 px-4 overflow-hidden">
+   <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-20 left-10 w-32 h-32 bg-yellow-500/10 rounded-full blur-3xl animate-pulse-slow"></div>
+    <div class="absolute bottom-20 right-10 w-40 h-40 bg-red-500/10 rounded-full blur-3xl animate-pulse-slow" style="animation-delay: 1s;"></div>
+   </div>
+   <div class="max-w-5xl mx-auto text-center relative z-10">
+    <div class="animate-float mb-6">
+     <div class="inline-flex items-center gap-2 bg-yellow-500/20 border border-yellow-500/30 rounded-full px-4 py-2"><span class="text-yellow-400 text-sm font-medium">📚 Semester Genap 2024/2025</span>
+     </div>
+    </div>
+    <h1 class="heading-font text-4xl md:text-6xl font-extrabold mb-4 leading-tight" id="hero-title"><span class="text-white">Pendidikan</span> <span class="block text-yellow-400">Pancasila &amp; Kewarganegaraan</span></h1>
+    <p class="text-lg md:text-xl text-slate-300 mb-6 max-w-3xl mx-auto" id="welcome-text">Selamat datang di portal pembelajaran PPKn Kelas 10. Mari bersama-sama mempelajari dan mengamalkan nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara.</p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+     <div class="flex items-center gap-3 bg-slate-800/50 rounded-full px-5 py-3 border border-slate-700">
+      <div class="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center"><i data-lucide="user" class="w-5 h-5 text-slate-900"></i>
+      </div>
+      <div class="text-left">
+       <p class="text-xs text-slate-400">Guru Pengajar</p>
+       <p class="font-semibold text-white" id="teacher-name">Dimas Aldi Fahrigi, S.Pd</p>
+      </div>
+     </div>
+     <div class="flex items-center gap-3 bg-slate-800/50 rounded-full px-5 py-3 border border-slate-700">
+      <div class="w-10 h-10 bg-gradient-to-br from-red-400 to-red-600 rounded-full flex items-center justify-center"><i data-lucide="school" class="w-5 h-5 text-white"></i>
+      </div>
+      <div class="text-left">
+       <p class="text-xs text-slate-400">Sekolah</p>
+       <p class="font-semibold text-white" id="school-name">SMA Taruna Nala Jawa Timur</p>
+      </div>
+     </div>
+    </div><a href="#materi" class="inline-flex items-center gap-2 btn-primary text-white font-semibold px-8 py-4 rounded-full shadow-xl"> <span>Mulai Belajar</span> <i data-lucide="arrow-down" class="w-5 h-5"></i> </a>
+   </div>
+  </section><!-- Section Divider -->
+  <div class="section-divider mx-auto max-w-xl"></div><!-- Materi Section -->
+  <section id="materi" class="py-16 px-4">
+   <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12"><span class="inline-block bg-yellow-500/20 text-yellow-400 text-sm font-semibold px-4 py-1 rounded-full mb-4">MATERI PEMBELAJARAN</span>
+     <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Topik Pembahasan Semester Ini</h2>
+     <p class="text-slate-400 max-w-2xl mx-auto">Pelajari berbagai aspek penting dalam kehidupan berbangsa dan bernegara Indonesia melalui materi-materi berikut</p>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"><!-- Materi 1 -->
+     <div class="material-card bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden group">
+      <div class="h-3 gold-accent"></div>
+      <div class="p-6">
+       <div class="w-14 h-14 bg-yellow-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><i data-lucide="scale" class="w-7 h-7 text-yellow-400"></i>
+       </div><span class="text-xs font-semibold text-yellow-400 bg-yellow-500/10 px-2 py-1 rounded">BAB 1</span>
+       <h3 class="heading-font text-xl font-bold text-white mt-3 mb-3">Hak dan Kewajiban Warga Negara</h3>
+       <p class="text-slate-400 text-sm leading-relaxed mb-4">Memahami hak-hak dasar warga negara yang dijamin konstitusi serta kewajiban yang harus dipenuhi sebagai bagian dari kehidupan bermasyarakat, berbangsa, dan bernegara Indonesia.</p>
+       <ul class="text-sm text-slate-500 space-y-2 mb-5">
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Hak asasi dalam UUD 1945</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Kewajiban warga negara</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Keseimbangan hak &amp; kewajiban</span></li>
+       </ul><button onclick="openMaterial(1)" class="w-full bg-slate-700/50 hover:bg-yellow-500/20 border border-slate-600 hover:border-yellow-500/50 text-white font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2"> <span>Pelajari Materi</span> <i data-lucide="arrow-right" class="w-4 h-4"></i> </button>
+      </div>
+     </div><!-- Materi 2 -->
+     <div class="material-card bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden group">
+      <div class="h-3 red-accent"></div>
+      <div class="p-6">
+       <div class="w-14 h-14 bg-red-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><i data-lucide="briefcase" class="w-7 h-7 text-red-400"></i>
+       </div><span class="text-xs font-semibold text-red-400 bg-red-500/10 px-2 py-1 rounded">BAB 2</span>
+       <h3 class="heading-font text-xl font-bold text-white mt-3 mb-3">Posisi, Tugas &amp; Tanggung Jawab</h3>
+       <p class="text-slate-400 text-sm leading-relaxed mb-4">Mengkaji peran dan tanggung jawab setiap warga negara dalam berbagai aspek kehidupan bernegara, termasuk partisipasi dalam pembangunan nasional dan kehidupan demokratis.</p>
+       <ul class="text-sm text-slate-500 space-y-2 mb-5">
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Peran dalam demokrasi</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Partisipasi pembangunan</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Tanggung jawab sosial</span></li>
+       </ul><button onclick="openMaterial(2)" class="w-full bg-slate-700/50 hover:bg-red-500/20 border border-slate-600 hover:border-red-500/50 text-white font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2"> <span>Pelajari Materi</span> <i data-lucide="arrow-right" class="w-4 h-4"></i> </button>
+      </div>
+     </div><!-- Materi 3 -->
+     <div class="material-card bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden group">
+      <div class="h-3 bg-gradient-to-r from-green-500 to-emerald-600"></div>
+      <div class="p-6">
+       <div class="w-14 h-14 bg-green-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><i data-lucide="shield" class="w-7 h-7 text-green-400"></i>
+       </div><span class="text-xs font-semibold text-green-400 bg-green-500/10 px-2 py-1 rounded">BAB 3</span>
+       <h3 class="heading-font text-xl font-bold text-white mt-3 mb-3">Pertahanan dan Keamanan Negara</h3>
+       <p class="text-slate-400 text-sm leading-relaxed mb-4">Mempelajari sistem pertahanan dan keamanan negara Indonesia (Sishankamrata), peran TNI-Polri, serta partisipasi masyarakat dalam menjaga kedaulatan bangsa.</p>
+       <ul class="text-sm text-slate-500 space-y-2 mb-5">
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Sistem Hankamrata</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Bela negara</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Ancaman &amp; tantangan</span></li>
+       </ul><button onclick="openMaterial(3)" class="w-full bg-slate-700/50 hover:bg-green-500/20 border border-slate-600 hover:border-green-500/50 text-white font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2"> <span>Pelajari Materi</span> <i data-lucide="arrow-right" class="w-4 h-4"></i> </button>
+      </div>
+     </div><!-- Materi 4 -->
+     <div class="material-card bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden group">
+      <div class="h-3 bg-gradient-to-r from-blue-500 to-cyan-500"></div>
+      <div class="p-6">
+       <div class="w-14 h-14 bg-blue-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><i data-lucide="globe" class="w-7 h-7 text-blue-400"></i>
+       </div><span class="text-xs font-semibold text-blue-400 bg-blue-500/10 px-2 py-1 rounded">BAB 4</span>
+       <h3 class="heading-font text-xl font-bold text-white mt-3 mb-3">Hubungan Internasional</h3>
+       <p class="text-slate-400 text-sm leading-relaxed mb-4">Menganalisis politik luar negeri Indonesia yang bebas aktif, kerja sama internasional, peran Indonesia di organisasi internasional, dan diplomasi dalam hubungan antarnegara.</p>
+       <ul class="text-sm text-slate-500 space-y-2 mb-5">
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Politik bebas aktif</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Indonesia di PBB &amp; ASEAN</span></li>
+        <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Diplomasi internasional</span></li>
+       </ul><button onclick="openMaterial(4)" class="w-full bg-slate-700/50 hover:bg-blue-500/20 border border-slate-600 hover:border-blue-500/50 text-white font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2"> <span>Pelajari Materi</span> <i data-lucide="arrow-right" class="w-4 h-4"></i> </button>
+      </div>
+     </div><!-- Materi 5 -->
+     <div class="material-card bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/50 overflow-hidden group md:col-span-2 lg:col-span-2">
+      <div class="h-3 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500"></div>
+      <div class="p-6 lg:flex lg:gap-6">
+       <div class="lg:flex-1">
+        <div class="w-14 h-14 bg-purple-500/20 rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform"><i data-lucide="star" class="w-7 h-7 text-purple-400"></i>
+        </div><span class="text-xs font-semibold text-purple-400 bg-purple-500/10 px-2 py-1 rounded">BAB 5</span>
+        <h3 class="heading-font text-xl font-bold text-white mt-3 mb-3">Nilai Pancasila dalam Pembangunan</h3>
+        <p class="text-slate-400 text-sm leading-relaxed mb-4">Memahami implementasi nilai-nilai Pancasila dalam setiap aspek pembangunan nasional, mulai dari ekonomi, sosial, budaya, hingga politik. Pancasila sebagai ideologi terbuka yang mampu menjawab tantangan zaman.</p>
+       </div>
+       <div class="lg:flex-1">
+        <ul class="text-sm text-slate-500 space-y-2 mb-5">
+         <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Pancasila sebagai ideologi pembangunan</span></li>
+         <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Ekonomi Pancasila dan keadilan sosial</span></li>
+         <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Pembangunan karakter bangsa</span></li>
+         <li class="flex items-start gap-2"><i data-lucide="check-circle" class="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0"></i> <span>Pancasila menghadapi globalisasi</span></li>
+        </ul><button onclick="openMaterial(5)" class="w-full bg-slate-700/50 hover:bg-purple-500/20 border border-slate-600 hover:border-purple-500/50 text-white font-medium py-3 rounded-xl transition-all flex items-center justify-center gap-2"> <span>Pelajari Materi</span> <i data-lucide="arrow-right" class="w-4 h-4"></i> </button>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </section><!-- Section Divider -->
+  <div class="section-divider mx-auto max-w-xl"></div><!-- Video Gallery Section -->
+  <section id="video" class="py-16 px-4">
+   <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-12"><span class="inline-block bg-red-500/20 text-red-400 text-sm font-semibold px-4 py-1 rounded-full mb-4">GALERI VIDEO</span>
+     <h2 class="heading-font text-3xl md:text-4xl font-bold text-white mb-4">Video Pembelajaran</h2>
+     <p class="text-slate-400 max-w-2xl mx-auto">Koleksi video edukatif untuk memperdalam pemahaman materi PPKn</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6" id="video-gallery"><!-- Video cards will be rendered here -->
+    </div><!-- Add Video Form -->
+    <div class="mt-10 bg-slate-800/60 backdrop-blur-sm rounded-2xl border border-slate-700/50 p-6">
+     <h3 class="text-lg font-bold text-white mb-4 flex items-center gap-2"><i data-lucide="plus-circle" class="w-5 h-5 text-yellow-400"></i> Tambah Video Baru</h3>
+     <form id="add-video-form" class="grid sm:grid-cols-2 gap-4">
+      <div><label class="block text-sm text-slate-400 mb-2">Judul Video</label> <input type="text" id="video-title" placeholder="Masukkan judul video" class="w-full bg-slate-700/50 border border-slate-600 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500/50 transition-colors">
+      </div>
+      <div><label class="block text-sm text-slate-400 mb-2">Link YouTube</label> <input type="text" id="video-url" placeholder="https://youtube.com/watch?v=..." class="w-full bg-slate-700/50 border border-slate-600 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500/50 transition-colors">
+      </div>
+      <div class="sm:col-span-2"><label class="block text-sm text-slate-400 mb-2">Deskripsi Singkat</label> <input type="text" id="video-desc" placeholder="Deskripsi singkat tentang video" class="w-full bg-slate-700/50 border border-slate-600 rounded-xl px-4 py-3 text-white placeholder-slate-500 focus:outline-none focus:border-yellow-500/50 transition-colors">
+      </div>
+      <div class="sm:col-span-2"><button type="submit" class="btn-primary text-white font-semibold px-6 py-3 rounded-xl flex items-center gap-2"> <i data-lucide="plus" class="w-5 h-5"></i> <span>Tambah Video</span> </button>
+      </div>
+     </form>
+    </div>
+   </div>
+  </section><!-- Contact Section -->
+  <section id="kontak" class="py-16 px-4">
+   <div class="max-w-4xl mx-auto">
+    <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm rounded-3xl border border-slate-700/50 p-8 md:p-12 text-center">
+     <div class="w-20 h-20 gold-accent rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl"><span class="text-4xl">🏫</span>
+     </div>
+     <h2 class="heading-font text-2xl md:text-3xl font-bold text-white mb-4">SMA Taruna Nala Jawa Timur</h2>
+     <p class="text-slate-400 mb-6">Mencetak Generasi Unggul, Berkarakter, dan Berwawasan Kebangsaan</p>
+     <div class="flex flex-wrap justify-center gap-4 mb-8">
+      <div class="flex items-center gap-2 bg-slate-700/50 rounded-full px-4 py-2"><i data-lucide="mail" class="w-4 h-4 text-yellow-400"></i> <span class="text-sm text-slate-300">ppkn@smataruna.sch.id</span>
+      </div>
+      <div class="flex items-center gap-2 bg-slate-700/50 rounded-full px-4 py-2"><i data-lucide="phone" class="w-4 h-4 text-green-400"></i> <span class="text-sm text-slate-300">(031) 123-4567</span>
+      </div>
+     </div>
+     <p class="text-sm text-slate-500">© 2025 PPKn Kelas 10 - Semua Hak Dilindungi</p>
+    </div>
+   </div>
+  </section><!-- Material Modal -->
+  <div id="material-modal" class="fixed inset-0 z-50 hidden">
+   <div class="absolute inset-0 bg-black/80 backdrop-blur-sm" onclick="closeModal()"></div>
+   <div class="absolute inset-4 md:inset-10 bg-slate-900 rounded-2xl border border-slate-700 overflow-hidden flex flex-col">
+    <div class="flex items-center justify-between p-4 border-b border-slate-700">
+     <h3 id="modal-title" class="heading-font text-xl font-bold text-white"></h3><button onclick="closeModal()" class="w-10 h-10 bg-slate-800 hover:bg-slate-700 rounded-full flex items-center justify-center transition-colors"> <i data-lucide="x" class="w-5 h-5 text-slate-400"></i> </button>
+    </div>
+    <div id="modal-content" class="flex-1 overflow-auto p-6 text-slate-300"></div>
+   </div>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      teacher_name: "Dimas Aldi Fahrigi, S.Pd",
+      school_name: "SMA Taruna Nala Jawa Timur",
+      welcome_text: "Selamat datang di portal pembelajaran PPKn Kelas 10. Mari bersama-sama mempelajari dan mengamalkan nilai-nilai Pancasila dalam kehidupan berbangsa dan bernegara.",
+      background_color: "#1a1a2e",
+      surface_color: "#1e293b",
+      text_color: "#f8fafc",
+      primary_action_color: "#e74c3c",
+      secondary_action_color: "#f4d03f"
+    };
+
+    // Video data storage
+    let videos = [
+      { id: 1, title: "Hak Asasi Manusia dalam UUD 1945", url: "https://youtube.com/watch?v=example1", desc: "Penjelasan lengkap tentang HAM yang dijamin konstitusi" },
+      { id: 2, title: "Bela Negara di Era Modern", url: "https://youtube.com/watch?v=example2", desc: "Konsep bela negara yang relevan untuk generasi muda" },
+      { id: 3, title: "Indonesia di ASEAN", url: "https://youtube.com/watch?v=example3", desc: "Peran Indonesia dalam kerja sama regional" },
+      { id: 4, title: "Nilai Pancasila dalam Kehidupan", url: "https://youtube.com/watch?v=example4", desc: "Implementasi Pancasila sehari-hari" },
+      { id: 5, title: "Sistem Pertahanan Rakyat Semesta", url: "https://youtube.com/watch?v=example5", desc: "Mengenal Sishankamrata Indonesia" },
+      { id: 6, title: "Demokrasi Pancasila", url: "https://youtube.com/watch?v=example6", desc: "Memahami demokrasi khas Indonesia" }
+    ];
+
+    // Material content data
+    const materialContent = {
+      1: {
+        title: "Hak dan Kewajiban Warga Negara",
+        content: `
+          <div class="space-y-6">
+            <div class="bg-yellow-500/10 border border-yellow-500/30 rounded-xl p-4">
+              <h4 class="font-bold text-yellow-400 mb-2">🎯 Tujuan Pembelajaran</h4>
+              <p class="text-sm">Memahami dan menganalisis hak serta kewajiban warga negara Indonesia berdasarkan UUD 1945</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">A. Pengertian Hak dan Kewajiban</h4>
+              <p class="mb-3"><strong class="text-yellow-400">Hak</strong> adalah sesuatu yang mutlak menjadi milik seseorang dan penggunaannya tergantung kepada orang yang bersangkutan.</p>
+              <p><strong class="text-yellow-400">Kewajiban</strong> adalah sesuatu yang harus dilakukan dengan penuh tanggung jawab.</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">B. Hak Warga Negara dalam UUD 1945</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Hak atas pekerjaan dan penghidupan yang layak (Pasal 27 ayat 2)</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Hak untuk berserikat dan berkumpul (Pasal 28)</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Hak untuk memeluk agama (Pasal 29)</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Hak atas pendidikan (Pasal 31)</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Hak untuk mempertahankan hidup (Pasal 28A)</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">C. Kewajiban Warga Negara</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Menjunjung hukum dan pemerintahan</li>
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Ikut serta dalam upaya pembelaan negara</li>
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Menghormati hak asasi manusia orang lain</li>
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Tunduk kepada pembatasan yang ditetapkan undang-undang</li>
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Ikut serta dalam pertahanan dan keamanan negara</li>
+              </ul>
+            </div>
+          </div>
+        `
+      },
+      2: {
+        title: "Posisi, Tugas & Tanggung Jawab Warga Negara",
+        content: `
+          <div class="space-y-6">
+            <div class="bg-red-500/10 border border-red-500/30 rounded-xl p-4">
+              <h4 class="font-bold text-red-400 mb-2">🎯 Tujuan Pembelajaran</h4>
+              <p class="text-sm">Menganalisis peran warga negara dalam berbagai aspek kehidupan bernegara</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">A. Posisi Warga Negara</h4>
+              <p class="mb-3">Warga negara memiliki posisi sebagai:</p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Subjek hukum yang memiliki hak dan kewajiban</li>
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Pelaku pembangunan nasional</li>
+                <li class="flex items-start gap-2"><span class="text-red-400">•</span> Pengawas jalannya pemerintahan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">B. Tugas Warga Negara</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Mengamalkan Pancasila dalam kehidupan sehari-hari</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Menjaga persatuan dan kesatuan bangsa</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Berpartisipasi dalam pembangunan</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Menaati peraturan perundang-undangan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">C. Tanggung Jawab Warga Negara</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Membayar pajak tepat waktu</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Menjaga ketertiban dan keamanan lingkungan</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Melestarikan lingkungan hidup</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Menggunakan hak pilih dalam pemilu</li>
+              </ul>
+            </div>
+          </div>
+        `
+      },
+      3: {
+        title: "Pertahanan dan Keamanan Negara",
+        content: `
+          <div class="space-y-6">
+            <div class="bg-green-500/10 border border-green-500/30 rounded-xl p-4">
+              <h4 class="font-bold text-green-400 mb-2">🎯 Tujuan Pembelajaran</h4>
+              <p class="text-sm">Memahami sistem pertahanan dan keamanan negara Indonesia (Sishankamrata)</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">A. Sistem Pertahanan Keamanan Rakyat Semesta</h4>
+              <p class="mb-3">Sishankamrata adalah sistem pertahanan yang melibatkan seluruh komponen bangsa dengan TNI dan Polri sebagai kekuatan utama.</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">B. Komponen Pertahanan Negara</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> <strong>Komponen Utama:</strong> TNI (Angkatan Darat, Laut, Udara)</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> <strong>Komponen Cadangan:</strong> Warga negara terlatih</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> <strong>Komponen Pendukung:</strong> Sumber daya nasional</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">C. Bela Negara</h4>
+              <p class="mb-3">Setiap warga negara berhak dan wajib ikut serta dalam upaya bela negara (Pasal 27 ayat 3 UUD 1945). Bentuk bela negara:</p>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Pendidikan Kewarganegaraan</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Pelatihan dasar kemiliteran</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Pengabdian sebagai TNI/Polri</li>
+                <li class="flex items-start gap-2"><span class="text-yellow-400">•</span> Pengabdian sesuai profesi</li>
+              </ul>
+            </div>
+          </div>
+        `
+      },
+      4: {
+        title: "Hubungan Internasional",
+        content: `
+          <div class="space-y-6">
+            <div class="bg-blue-500/10 border border-blue-500/30 rounded-xl p-4">
+              <h4 class="font-bold text-blue-400 mb-2">🎯 Tujuan Pembelajaran</h4>
+              <p class="text-sm">Menganalisis politik luar negeri Indonesia dan kerja sama internasional</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">A. Politik Luar Negeri Bebas Aktif</h4>
+              <p class="mb-3"><strong class="text-blue-400">Bebas:</strong> Tidak memihak salah satu blok kekuatan dunia</p>
+              <p><strong class="text-blue-400">Aktif:</strong> Berperan aktif dalam mewujudkan perdamaian dunia</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">B. Peran Indonesia di Organisasi Internasional</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>PBB:</strong> Anggota aktif sejak 1950, kontributor pasukan perdamaian</li>
+                <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>ASEAN:</strong> Pendiri dan pemimpin regional</li>
+                <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>OKI:</strong> Anggota aktif organisasi negara Islam</li>
+                <li class="flex items-start gap-2"><span class="text-blue-400">•</span> <strong>G20:</strong> Representasi ekonomi berkembang</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">C. Bentuk Kerja Sama Internasional</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Bilateral: Antar dua negara</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Regional: Kawasan tertentu (ASEAN)</li>
+                <li class="flex items-start gap-2"><span class="text-green-400">•</span> Multilateral: Banyak negara (PBB)</li>
+              </ul>
+            </div>
+          </div>
+        `
+      },
+      5: {
+        title: "Nilai Pancasila dalam Pembangunan",
+        content: `
+          <div class="space-y-6">
+            <div class="bg-purple-500/10 border border-purple-500/30 rounded-xl p-4">
+              <h4 class="font-bold text-purple-400 mb-2">🎯 Tujuan Pembelajaran</h4>
+              <p class="text-sm">Memahami implementasi nilai-nilai Pancasila dalam pembangunan nasional</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">A. Pancasila sebagai Ideologi Pembangunan</h4>
+              <p class="mb-3">Pancasila menjadi pedoman dalam merumuskan kebijakan pembangunan yang berkeadilan dan bermartabat.</p>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">B. Implementasi Nilai Pancasila</h4>
+              <ul class="space-y-3">
+                <li><strong class="text-yellow-400">Sila 1 - Ketuhanan:</strong> Pembangunan spiritual, kebebasan beragama, toleransi</li>
+                <li><strong class="text-blue-400">Sila 2 - Kemanusiaan:</strong> Pembangunan HAM, kesejahteraan sosial, anti diskriminasi</li>
+                <li><strong class="text-red-400">Sila 3 - Persatuan:</strong> Pembangunan infrastruktur merata, integrasi nasional</li>
+                <li><strong class="text-green-400">Sila 4 - Kerakyatan:</strong> Demokrasi, partisipasi masyarakat, good governance</li>
+                <li><strong class="text-purple-400">Sila 5 - Keadilan:</strong> Pemerataan ekonomi, pengentasan kemiskinan, kesetaraan</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 class="text-lg font-bold text-white mb-3">C. Tantangan Globalisasi</h4>
+              <ul class="space-y-2">
+                <li class="flex items-start gap-2"><span class="text-purple-400">•</span> Menjaga identitas nasional di era digital</li>
+                <li class="flex items-start gap-2"><span class="text-purple-400">•</span> Memfilter budaya asing yang masuk</li>
+                <li class="flex items-start gap-2"><span class="text-purple-400">•</span> Menguatkan ekonomi kerakyatan</li>
+                <li class="flex items-start gap-2"><span class="text-purple-400">•</span> Memperkuat karakter generasi muda</li>
+              </ul>
+            </div>
+          </div>
+        `
+      }
+    };
+
+    // Render video gallery
+    function renderVideos() {
+      const gallery = document.getElementById('video-gallery');
+      gallery.innerHTML = videos.map(video => `
+        <div class="video-card bg-slate-800/60 backdrop-blur-sm rounded-xl border border-slate-700/50 overflow-hidden group">
+          <div class="relative h-36 bg-slate-700 flex items-center justify-center">
+            <div class="absolute inset-0 bg-gradient-to-br from-red-500/20 to-slate-900/50"></div>
+            <a href="${video.url}" target="_blank" rel="noopener noreferrer" class="relative z-10 w-16 h-16 bg-red-500 hover:bg-red-600 rounded-full flex items-center justify-center shadow-xl transition-all group-hover:scale-110">
+              <i data-lucide="play" class="w-7 h-7 text-white ml-1"></i>
+            </a>
+          </div>
+          <div class="p-4">
+            <h4 class="font-semibold text-white mb-1 line-clamp-2">${video.title}</h4>
+            <p class="text-sm text-slate-400 line-clamp-2">${video.desc}</p>
+            <div class="mt-3 flex items-center justify-between">
+              <a href="${video.url}" target="_blank" rel="noopener noreferrer" class="text-sm text-yellow-400 hover:text-yellow-300 flex items-center gap-1">
+                <span>Tonton</span>
+                <i data-lucide="external-link" class="w-3 h-3"></i>
+              </a>
+              <button onclick="deleteVideo(${video.id})" class="text-slate-500 hover:text-red-400 transition-colors">
+                <i data-lucide="trash-2" class="w-4 h-4"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+      lucide.createIcons();
+    }
+
+    // Add video
+    document.getElementById('add-video-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const title = document.getElementById('video-title').value.trim();
+      const url = document.getElementById('video-url').value.trim();
+      const desc = document.getElementById('video-desc').value.trim();
+      
+      if (title && url) {
+        videos.push({
+          id: Date.now(),
+          title,
+          url,
+          desc: desc || 'Video pembelajaran PPKn'
+        });
+        renderVideos();
+        this.reset();
+      }
+    });
+
+    // Delete video
+    function deleteVideo(id) {
+      videos = videos.filter(v => v.id !== id);
+      renderVideos();
+    }
+
+    // Open material modal
+    function openMaterial(id) {
+      const material = materialContent[id];
+      if (material) {
+        document.getElementById('modal-title').textContent = material.title;
+        document.getElementById('modal-content').innerHTML = material.content;
+        document.getElementById('material-modal').classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+      }
+    }
+
+    // Close modal
+    function closeModal() {
+      document.getElementById('material-modal').classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeModal();
+    });
+
+    // Element SDK initialization
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange: async (config) => {
+          document.getElementById('teacher-name').textContent = config.teacher_name || defaultConfig.teacher_name;
+          document.getElementById('school-name').textContent = config.school_name || defaultConfig.school_name;
+          document.getElementById('nav-school').textContent = config.school_name || defaultConfig.school_name;
+          document.getElementById('welcome-text').textContent = config.welcome_text || defaultConfig.welcome_text;
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => window.elementSdk.setConfig({ background_color: value })
+            },
+            {
+              get: () => config.surface_color || defaultConfig.surface_color,
+              set: (value) => window.elementSdk.setConfig({ surface_color: value })
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => window.elementSdk.setConfig({ text_color: value })
+            },
+            {
+              get: () => config.primary_action_color || defaultConfig.primary_action_color,
+              set: (value) => window.elementSdk.setConfig({ primary_action_color: value })
+            },
+            {
+              get: () => config.secondary_action_color || defaultConfig.secondary_action_color,
+              set: (value) => window.elementSdk.setConfig({ secondary_action_color: value })
+            }
+          ],
+          borderables: [],
+          fontEditable: undefined,
+          fontSizeable: undefined
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ["teacher_name", config.teacher_name || defaultConfig.teacher_name],
+          ["school_name", config.school_name || defaultConfig.school_name],
+          ["welcome_text", config.welcome_text || defaultConfig.welcome_text]
+        ])
+      });
+    }
+
+    // Initialize
+    renderVideos();
+    lucide.createIcons();
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9e4c687cc6fa4fa5',t:'MTc3NDkyOTIxOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
